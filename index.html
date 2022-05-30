@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Snake</title>
   <stylesheet class="style.css"></stylesheet>
+  <script src="game.js" defer type="module"></script>
   <style>
     body {
       min-height: 100vh;
@@ -15,6 +16,25 @@
       align-items: center;
       margin: 0;
       background-color: rgb(53, 53, 97);
+    }
+
+    #game-board {
+      background-color: rgb(53, 53, 97);
+      width: 100vmin;
+      height: 100vmin;
+      display: grid;
+      grid-template-columns: repeat(21, 1fr);
+      grid-template-rows: repeat(21, 1fr);
+    }
+
+    .snake {
+      background-color: rgb(53, 53, 97);
+      border: 0.25vmin solid black;
+    }
+
+    .food {
+      background-color: rgb(53, 53, 97);
+      border: 0.25vmin solid black;
     }
   </style>
 </head>
