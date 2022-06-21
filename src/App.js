@@ -25,7 +25,10 @@ function App() {
   
   ])
 
-  const toggleReminder = (id) => {}
+  const toggleReminder = (id) => {
+    setTasks(tasks.map((task) => task.id === id 
+    ? { ...task, reminder: !task.reminder } : task))
+  }
 
   const deleteTask = (id) => {
     setTasks(tasks.filter((task) =>  task.id !== id))
